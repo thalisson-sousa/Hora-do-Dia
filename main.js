@@ -19,3 +19,8 @@ if (hora >= 0 && hora < 12) {
     document.body.style.background = 'black'
 }
 }
+
+    function autoRefresh() {
+        window.location = window.location.href;
+    }
+    setInterval('autoRefresh()', 30000);
