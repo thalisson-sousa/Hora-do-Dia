@@ -2,9 +2,11 @@ function carregar() {
 const msg = document.querySelector('#msg')
 const img = document.querySelector('#foto')
 const data = new Date()
-var hora = data.getHours()
+const dataM = new Date()
+let hora = data.getHours()
+let Minutos = dataM.getMinutes()
 
-msg.innerHTML = `Agora são ${hora} Horas.`
+msg.innerHTML = `Agora são ${hora}:${Minutos} 🕒`
 
 if (hora >= 0 && hora < 12) {
     img.innerHTML = '<p>Bom dia!</p>' + '<img src="img/fotomanha.png" alt="foto do dia">'
